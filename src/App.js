@@ -6,7 +6,7 @@ import {
   Route,
 } from "react-router-dom"
 
-import login from './Components/login'
+import Login from './Components/login'
 import signup from './Components/signup'
 import dashboard from './Components/tracker'
 import Error404 from './Components/Error404';
@@ -21,7 +21,7 @@ function App() {
         <Switch>
           <Route exact path = '/' component={dashboard}/>
           <Route path = '/dashboard' component={dashboard}/>
-          <Route path = '/login' component = {login}/>
+          <Route path = '/login' component = {Login}/>
           <Route path = '/signup' component = {signup}/>
           <Route component = {Error404}/>
         </Switch>

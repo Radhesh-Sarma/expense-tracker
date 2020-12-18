@@ -1,33 +1,43 @@
-import React from 'react'
+import React,{useRef} from 'react'
 import {Card,Form,Button} from 'react-bootstrap'
 import {Link} from 'react-router-dom'
 
 
-export default function login() {
+export default function Login() {
+    const emailRef = useRef()
+const passwordRef = useRef()
+    function handleSubmit(e)
+    {
+        e.preventDefault()
+        console.log(emailRef.current.value)
+        console.log(passwordRef.current.value)
+    }
     return (
         <div >
             <Card className = "mb-3" style={{width: '30rem' , color : "#000"}}>
                 <Card.Title><h1 className = "mt-4 text-center">Log In</h1></Card.Title>
                 <Card.Body>
 
-                <Form>
+                <Form onSubmit = {handleSubmit}>
 
-                    <Form.Group Controlid = "email">
+                    <Form.Group id = "email">
                         
                         <Form.Label >Email </Form.Label>
-                        <Form.Control type = "email" placeholder = "Enter Email Address"></Form.Control>
+                    <Form.Control type = "email" ref = {emailRef} placeholder = "Enter Email Address"></Form.Control>
                         
-                    </Form.Group>
+                    </Form.Group >
 
-                                        <Form.Group Controlid = "password">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type = "password" placeholder = "Enter Password"></Form.Control>
-                   
+                    <Form.Group id = "password">
+
+                        <Form.Label>Password</Form.Label>
+                    <Form.Control type = "password" ref = {passwordRef} placeholder = "Enter Password"></Form.Control>
+                    
                     </Form.Group>
-                </Form>
-                <Button className = "mb-3 w-100" variant = "secondary" type = "submit">
+                
+                <Button className = "mb-3 w-100" variant = "secondary" type = "Submit">
                 Login
                 </Button>
+                </Form>
                 <p>
                     <h5 className = "text-center">
                     Want to create an account ? <Link to = "/signup">Sign Up</Link>

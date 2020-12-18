@@ -28,10 +28,11 @@ export default function signup() {
                     <Form.Control type = "password" placeholder = "Enter Password"></Form.Control>
                    
                     </Form.Group>
-                </Form>
+                
                 <Button className = "mb-3 w-100" variant = "secondary" type = "submit">
                 Login
                 </Button>
+                </Form>
                 <p>
                     <h5 className = "text-center">
                    Already Have an account ? <Link to = "/login">Login</Link>
