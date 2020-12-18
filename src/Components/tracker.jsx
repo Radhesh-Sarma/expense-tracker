@@ -1,4 +1,4 @@
-import React, { Component ,UseRef} from 'react'
+import React, { Component } from 'react'
 import { Row,Col,Card, Container, Button, Form } from 'react-bootstrap'
 
 
@@ -11,10 +11,7 @@ export default class tracker extends Component {
             balance:0,
             transactionHistory:[{"text":"test1","amount":"5555"},{"text":"test2","amount":"9999"}]
         }
-        function handleSubmit(e)
-        {
-            e.preventDefault()
-        }
+
     }
     
 
