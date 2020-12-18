@@ -1,17 +1,15 @@
 import './App.css';
-import React, { Component } from 'react'
+import React from 'react'
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom"
 
 import login from './Components/login'
 import signup from './Components/signup'
 import dashboard from './Components/tracker'
 import Error404 from './Components/Error404';
-import { Container } from 'react-bootstrap';
 
 
 
