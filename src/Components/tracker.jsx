@@ -23,7 +23,7 @@ export default class tracker extends Component {
             <div>
           
             <h1 className = "mb-3 mt-3 text-center">Expense Tracker</h1>
-            <h3 className = "mb-3 mt-3 text-center">Welcome Pranjal Shukla</h3>
+            <h3 className = "mb-3 mt-3 text-center">Welcome User</h3>
         <Container fluid>
             
             
